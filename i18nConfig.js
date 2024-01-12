@@ -1,6 +1,7 @@
 const i18nConfig = {
-  locales: ["en", "ko", "th"],
+  locales: ["en", "ko"],
   defaultLocale: "en",
+  defaultNameSpace: "translation",
 };
 
 module.exports = i18nConfig;
