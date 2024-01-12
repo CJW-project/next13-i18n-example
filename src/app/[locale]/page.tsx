@@ -2,6 +2,7 @@ import initTranslations from '../i18n';
 import styles from './page.module.css'
 import TestClientComponent from '@/components/testClientComponent';
 import TranslationsProvider from '@/components/translationsProvider';
+import LanguageChanger from '@/components/languageChanger';
 
 export default async function Home({params: { locale }} : Record<any, any>) {
 
@@ -17,6 +18,7 @@ export default async function Home({params: { locale }} : Record<any, any>) {
       <main className={styles.main}>
         <h1>{t('title')}</h1>
         <TestClientComponent />
+        <LanguageChanger/>
       </main>
     </TranslationsProvider>
   );
